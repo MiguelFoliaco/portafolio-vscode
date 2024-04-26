@@ -30,8 +30,9 @@ export const Header = () => {
             </div>
             <div className="options-windows">
                 <LiaLinkedinIn title='Go to Linkedin' className='link'/>
-                <LiaGithub title='Go to Github' className='git'/>
                 <LiaFilePdf title='Go to CV' className='pdf'/>
+                <LiaGithub title='Go to Github' className='git'/>
+                <img src="https://img.shields.io/github/stars/MiguelFoliaco/portafolio-vscode?style=social&logoColor=1a98ff&labelColor=%231a98ff&color=%231a98ff" alt="Starts Protafolio" />
             </div>
         </div>
     )

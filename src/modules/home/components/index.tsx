@@ -1,6 +1,5 @@
-import { MDXProvider } from '@mdx-js/react';
-import Profile from '../readme/home.md';
 import style from '../style/home.module.less';
+import { HomeContent } from './home';
 
 // /** @type {import('mdx/types.js').MDXComponents} */
 // const components = {
@@ -10,10 +9,13 @@ import style from '../style/home.module.less';
 // }
 export const Home = () => {
   return (
-    <div className={` ${style.home}`}>
-      <MDXProvider>
+    <div className={`${style.home}`}>
+      <HomeContent />
+      {/* <MDXProvider
+        disableParentContext
+      >
         <Profile />
-      </MDXProvider>
+      </MDXProvider> */}
     </div>
   )
 }

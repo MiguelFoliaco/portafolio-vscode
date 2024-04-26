@@ -3,7 +3,7 @@
 @titleBar--activeForeground: #FCFBFE;
 @white: #c7c7c784;
 
-* {
+*:not(.not-format) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +23,7 @@
     background-color: #0f0f0f;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(27, 1fr);
     grid-template-rows: repeat(20, 1fr);
 
     * {
@@ -40,7 +40,7 @@
         }
 
         grid-column-start: 1;
-        grid-column-end: 13;
+        grid-column-end: 28;
         grid-row-start: 1;
         grid-row-end: 2;
         background-color: @titleBar-activeBackground;
@@ -91,7 +91,7 @@
     .search-files {
         width: 100%;
         grid-column-start: 3;
-        grid-column-end: 10;
+        grid-column-end: 18;
 
         .search-icon-with-name {
             display: flex;
@@ -116,7 +116,7 @@
     .options-windows {
         display: flex;
         justify-content: flex-end;
-        grid-column-end: 13;
+        grid-column-end: 28;
         gap: 5px;
 
         svg {
@@ -144,8 +144,8 @@
     }
 
     .file {
-        grid-column-start: 1;
-        grid-column-end: 11;
+        grid-column-start: 2;
+        grid-column-end: 23;
         grid-row-start: 2;
         grid-row-end: 21;
         overflow-y: scroll;
@@ -153,11 +153,34 @@
         overflow: hidden;
     }
 
+    .counter {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: #0a0a0a;
+        grid-row-start: 2;
+        grid-row-end: 21;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+
+        p {
+            font-size: 13px;
+            margin: 3px;
+            color: rgba(255, 255, 255, .3);
+            font-family: monospace;
+        }
+    }
+
     .left-bar {
         background-color: #161616;
-        grid-column-start: 11;
-        grid-column-end: 13;
+        grid-column-start: 23;
+        grid-column-end: 28;
         grid-row-start: 2;
         grid-row-end: 21;
     }
+
 }
