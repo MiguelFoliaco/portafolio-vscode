@@ -10,7 +10,9 @@ import { HomeContent } from './home';
 export const Home = () => {
   return (
     <div className={`${style.home}`}>
-      <HomeContent />
+      <div className={`${style.containerFile}`}>
+        <HomeContent />
+      </div>
       {/* <MDXProvider
         disableParentContext
       >
