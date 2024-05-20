@@ -10,6 +10,7 @@
     font-family: Roboto;
 }
 
+
 .not-format {
     * {
         margin: inherit;
@@ -23,7 +24,7 @@
     background-color: #0f0f0f;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(27, 1fr);
+    //grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(20, 1fr);
 
     * {
@@ -174,6 +175,8 @@
             font-family: monospace;
         }
     }
+    
+}
 
     .left-bar {
         background-color: #161616;
@@ -182,8 +185,6 @@
         grid-row-start: 2;
         grid-row-end: 21;
     }
-
-}
 
 .file {
     .br-space-hidden {
@@ -226,5 +227,50 @@
         color: #61ff73;
         margin: 0px 3px;
         cursor: pointer;
+    }
+
+    .tag-div {
+        color: #fb5fa5;
+    }
+
+    .tag-container {
+        position: relative;
+    }
+
+    .container-stack {
+        display: flex;
+        flex-direction: column;
+
+        .container-content-container-stack {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+        }
+    }
+
+    .container-stack-item {
+        display: flex;
+        flex-direction: column;
+
+        .container-content-container-stack-item {
+            display: flex;
+            padding-left: 30px;
+        }
+    }
+
+    .container-img-stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img-img-stack {
+            width: 100px;
+            height: 25px;
+            object-fit: contain;
+        }
+
+        .react-native-img {
+            width: 120px;
+        }
     }
 }

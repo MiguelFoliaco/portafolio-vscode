@@ -10,15 +10,23 @@ type props = {
     attributte?: string;
 }
 export const TextTagTag = ({ tag = 'p', children, className, attributte }: props) => {
+
     return (
-        <p className={className}>
+        <p className={`p-tag ${className}`} style={{ display: tag === 'div' ? 'flex' : 'inherit' }}>
             {
                 children ?
                     <>
                         <span className={`tag-${tag}`}>
                             {`<${tag}${attributte ? ' ' + attributte : ''}>`}
                         </span>
-                        {children}
+                        {
+                            tag !== 'div' ?
+                                children
+                                :
+                                <div className={`container-content-${className}`} >
+                                    {children}
+                                </div>
+                        }
                         <span className={`tag-${tag}`}>
                             {`</${tag}>`}
                         </span>

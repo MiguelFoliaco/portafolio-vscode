@@ -17,7 +17,7 @@ export const LayoutVSCode = ({ children }: props) => {
             <div className="counter">
                 {
                     arr.map(e => (
-                        <p>{e}</p>
+                        <p key={`item-counter-${e}`}>{e}</p>
                     ))
                 }
             </div>

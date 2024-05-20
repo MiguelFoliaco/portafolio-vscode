@@ -1,0 +1,24 @@
+{
+    "jobs":[
+    {
+        "bussine":"Distribuidora y papeleria Veneplast",
+        "profile":"Auxiliar de sistema",
+        "desc":"Administrar Base de datos con el fin de dar soporte en su software ERP para obtener informacion para la realizacion de informes y reportes",
+        "startDate":"11/2021",
+        "endDate":"08/2022"
+    },
+    {
+        "bussine":"Solutec",
+        "profile":"Tecnico en Soporte",
+        "desc":"Mantenimiento preventivo de equipos de computo, y reparacion de los mismos.",
+        "startDate":"09/2022",
+        "endDate":"09/2022"
+    },
+    {
+        "bussine":"It Globers",
+        "profile":"Desarrollador Full Stack Webs/Apps",
+        "desc":"Creación de aplicaciones web, microservicios y apps y soporte de los mismos, con enfoque a ecommerces",
+        "startDate":"09/2022",
+        "endDate":"09/2022"
+    }
+]}
